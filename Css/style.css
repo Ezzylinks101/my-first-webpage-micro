@@ -22,7 +22,7 @@ body {
 }
 @media screen and (max-width:400px) {
     .micro-b{
-        width: 400px;
+        width: 500px;
         overflow-x: hidden;
         height: 100%;   
     }
@@ -213,6 +213,9 @@ a {
     .text-about {
         max-width: 700px;
         margin: 0 auto;
+    }
+    .form-header-imag{
+        background-image: none;
     }
 }
 
