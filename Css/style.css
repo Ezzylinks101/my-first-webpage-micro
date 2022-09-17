@@ -1,0 +1,338 @@
+html {
+    /*62.5% of 16px of the default font-size = 10px*/
+    font-size: 62.5%;
+}
+
+:root {
+    --color-primary: #3700c2da;
+    --color-secondary: #5CB8E4;
+    --color-accent: #fde021;
+    --color-apply-head: #1baa7a;
+    --color-block: #837a6d;
+    --color-quotename: #290e6d;
+}
+
+body {
+    background: rgb(225, 223, 223);
+    margin: 0;
+    padding: 0;
+   
+    overflow-x: hidden;
+    
+}
+@media screen and (max-width:500px) {
+    .micro-b{
+        width: 500px;
+        overflow-x: hidden;
+        height: 100%
+       
+    }
+    .form-intl-intro{
+        font-size: 1rem;
+    }
+}
+
+
+.container {
+    background: var(--color-accent);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+
+
+}
+
+.apply_form {
+    background: var(--color-apply-head);
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
+    font-weight: 800px;
+    transition: transform 0.5s, linear, delay 4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.apply_form:hover {
+    color: #6e6964;
+}
+
+@keyframes shake {
+    25% {
+        transform: scale(1);
+    }
+
+    46% {
+        transform: rotate(1deg);
+    }
+
+    47% {
+        transform: translateX(2px);
+
+
+    }
+
+    48% {
+        transform: rotate(-2deg);
+    }
+
+    49% {
+        transform: rotate(2deg);
+
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    51% {
+        transform: rotate(2deg);
+    }
+
+    52% {
+        transform: rotate(-2deg);
+    }
+
+    53% {
+        transform: rotate(-2deg);
+    }
+
+}
+
+.apply_form_loop {
+    animation: shake 3s cubic-bezier(.47, 1.64, .41, .8) 3s infinite;
+}
+
+.form-header {
+    background: var(--color-primary);
+    color: white;
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-bottom: 15rem;
+   
+}
+.form-header-imag{
+    background-image: url(/images/typing\ woman.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50rem;
+
+}
+
+.form-intl {
+    font-size: 6rem;
+    margin-top: 0;
+}
+
+.intro {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.form-intl-intro {
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-intl-intro-span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.apply_form_1x2 {
+    color: rgb(28, 25, 25);
+    background: var(--color-accent);
+    border-radius: 3px;
+    text-shadow: 1px 1px 10px #fff;
+}
+
+@media screen and (min-width:980px) {
+    .container {
+        display: grid;
+        grid-template-columns: 9fr 2fr 3fr;
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro {
+        font-size: 2.5rem;
+        padding-left: 20rem;
+    }
+
+    .apply_form {
+        font-size: 1.5rem;
+    }
+
+    .form-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20rem;
+    }
+
+    .form-intl {
+        font-size: 5rem;
+    }
+
+    .form-intl-intro {
+        font-size: 2rem;
+    }
+
+    .text-change {
+        max-width: 70rem;
+        margin: 2px auto
+    }
+}
+
+@media screen and (max-width:980px) {
+    .form-image {
+        display: none;
+    }
+}
+
+.text-about {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:700px) {
+    .text-about {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.text-change {
+    background: #ffe646;
+    text-align: center;
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+}
+
+.test-para {
+    font-size: 3.1rem;
+    text-align: center;
+    padding: 2rem 3rem;
+    color: rgb(57, 54, 54);
+    margin-top: 2rem;
+}
+
+/*testimony of previous developer*/
+.quote {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.first-qoute {
+    background: rgb(245, 245, 245);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(51, 49, 49);
+    width: 250px;
+    padding: 2rem 5rem;
+    margin-right: 5rem;
+}
+
+.qoute-name {
+    color: var(--color-quotename);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 550;
+}
+
+.first-testimony {
+    position: relative;
+}
+
+.testimony1 {
+    border-radius: 100%;
+    box-shadow: 1rem -1rem #40bb92;
+    position: absolute;
+    left: -2.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+.second-testimony {
+    position: relative;
+}
+
+.testimony2 {
+    border-radius: 100%;
+    box-shadow: 1rem -1rem #FFF6BF;
+    position: absolute;
+    left: -2.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+
+}
+
+.third-testimony {
+    position: relative;
+}
+
+.testimony3 {
+    border-radius: 100%;
+    box-shadow: 1rem -1rem #ECC5FB;
+    position: absolute;
+    left: -2.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+
+}
+
+@media screen and (min-width:980px) {
+    .quote {
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        justify-items: center;
+        align-items: center;
+        margin: 0 3rem;
+        margin-right: 5rem;
+
+
+    }
+
+    .first-qoute {
+        width: 15vw;
+    }
+}
+
+.text-change2 {
+    background: #ffe646;
+    text-align: center;
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.test-para2 {
+    font-size: 3.1rem;
+    text-align: center;
+    padding: 2rem 3rem;
+    color: rgb(57, 54, 54);
+    margin-top: 2rem;
+}
