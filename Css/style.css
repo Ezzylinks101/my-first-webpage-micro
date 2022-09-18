@@ -20,15 +20,15 @@ body {
     overflow-x: hidden;
     
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .micro-b{
         width: 500px;
         overflow-x: hidden;
         height: 100%;   
     }
 
-    .form-intl-intro {
-        font-size:2rem;
+    .form-header-imag{
+
     }
 }
 
@@ -123,8 +123,8 @@ a {
     background-image: url(/images/typing\ woman.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 50rem;
-
+    background-size: 45rem;
+   
 }
 
 .form-intl {
@@ -135,9 +135,11 @@ a {
 .intro {
     font-size: 3rem;
     margin: 0;
+    padding-top: 1rem;
 }
 
 .form-intl-intro {
+    padding-right: 3rem;
     font-size: 3rem;
     font-weight: lighter;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -164,6 +166,9 @@ a {
         align-items: center;
         margin: 0;
         padding: 0;
+    }
+    .form-header-imag{
+display: none;
     }
 
     .intro {
@@ -193,30 +198,60 @@ a {
         max-width: 70rem;
         margin: 2px auto
     }
+    .form-header-imag{
+        background-image: none;
+    }
+    .quote {
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        justify-items: center;
+        align-items: center;
+        margin: 0 3rem;
+        margin-right: 5rem;
+
+
+    }
+
+    .first-qoute {
+        width: 15vw;
+    }
 }
 
 @media screen and (max-width:980px) {
     .form-image {
         display: none;
     }
-}
+    .form-header-imag{
+        opacity: 0.7;
+    }
 
-.text-about {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  
 }
 
 @media screen and (min-width:700px) {
     .text-about {
         max-width: 700px;
         margin: 0 auto;
-    }
+    }  
+}
+@media screen and (max-width:700px) {
     .form-header-imag{
-        background-image: none;
+        background-size:35rem ;
+        z-index: -1;
+    } 
+    .apply_form_1x2{
+        position: relative;
+        left: 6rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
+}
+.text-about {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .text-change {
@@ -307,20 +342,7 @@ a {
 }
 
 @media screen and (min-width:980px) {
-    .quote {
-        display: grid;
-        grid-template-columns: 3fr 1fr 2fr;
-        justify-items: center;
-        align-items: center;
-        margin: 0 3rem;
-        margin-right: 5rem;
-
-
-    }
-
-    .first-qoute {
-        width: 15vw;
-    }
+   
 }
 
 .text-change2 {
