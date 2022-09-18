@@ -141,7 +141,7 @@ a {
 .form-intl-intro {
     padding-right: 3rem;
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -193,10 +193,16 @@ display: none;
     .form-intl-intro {
         font-size: 2rem;
     }
+    .text-about{
+        position:relative;
+        left: 40rem;
+    
+    }
 
     .text-change {
-        max-width: 70rem;
-        margin: 2px auto
+        width: 80rem;
+        margin: 2px auto;
+        padding: 2rem;
     }
     .form-header-imag{
         background-image: none;
@@ -232,6 +238,7 @@ display: none;
     .text-about {
         max-width: 700px;
         margin: 0 auto;
+        margin-bottom: 2rem;
     }  
 }
 @media screen and (max-width:700px) {
@@ -252,6 +259,14 @@ display: none;
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-left: 4rem;
+}
+@media screen and (max-width:550px) {
+    .text-about{
+        width: 400px;
+        margin-left: 40px; 
+    }
+    
 }
 
 .text-change {
@@ -261,6 +276,7 @@ display: none;
     padding-bottom: 1rem;
     margin-top: 2rem;
     margin-bottom: 0;
+    opacity: 0.9;
 
 }
 
@@ -341,15 +357,13 @@ display: none;
 
 }
 
-@media screen and (min-width:980px) {
-   
-}
+
 
 .text-change2 {
     background: #ffe646;
     text-align: center;
-    font-size: 4.5rem;
-    padding-bottom: 1rem;
+    font-size: 4rem;
+    padding:  1.5rem 0;
     margin-top: 2rem;
     margin-bottom: 0;
 }
@@ -360,4 +374,79 @@ display: none;
     padding: 2rem 3rem;
     color: rgb(57, 54, 54);
     margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+.text-change3{
+    background: #29ad86;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+.apply-link2{
+    font-size: 2rem;
+    color: #29ad86;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.apply-link{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width:980px) {
+    .text-change2 {
+        padding:  1.5rem 0;}
+        .tex-change3{padding: 1rem 0;}
+}
+/*Description of benefits*/
+.promise{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 6rem;
+    grid-template-rows:(2,5rem);
+}
+.promise_img{
+
+    width: 70vw;
+}
+.promise-text{
+    text-align: center;
+}
+.promise_head{
+    color: var(--color-quotename);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.promise_para{
+    font-size: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+.first-promise_link{
+    text-decoration: none;
+}
+.first-promise_link:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width:700px) {
+    .promise{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:(2,5rem);
+        max-width: 800px;
+        margin: auto;
+    }
+    .promise-text{
+        width: 360px
+    }
+    .promise_img{
+
+        width: 350px;
+    }
 }
